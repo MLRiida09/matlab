@@ -1,4 +1,4 @@
-function draw_car3D_no_cabin(x, color)
+function car(x, color)
 % Fonction pour dessiner une voiture 3D simple sans cabine
 % x = [X; Y; Z; theta]
 % color = couleur de la voiture (par défaut 'r')
@@ -7,9 +7,9 @@ if nargin < 2, color = 'r'; end
 if length(x) < 4, x(4) = 0; end  % زاوية الدوران
 
 % إعداد الشكل
-figure; hold on; grid on; axis equal; view(3);
-xlabel('X'); ylabel('Y'); zlabel('Z');
-title('3DCar ');
+% figure; hold on; grid on; axis equal; view(3);
+% xlabel('X'); ylabel('Y'); zlabel('Z');
+% title('3DCar ');
 
 % أبعاد ثابتة
 r = 0.3;  % نصف قطر العجلة
